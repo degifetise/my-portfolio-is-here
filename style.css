@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'poppins',sans-serif ;
+  box-sizing: border-box;
+  }
+  body{
+  background:black;
+  }
+  .navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 25px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  }
+  .logo{
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: aliceblue;
+  }
+  .logo:hover{
+  color: blueviolet;
+  }
+  
+  .navbar ul{
+  display: flex;
+  }
+  .navbar ul li{
+    list-style: none;
+  margin-left: 35px;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 700;
+  transition: .2s;
+  }
+  .navbar ul li.active:hover a{
+  color: brown;
+  }
+  .navbar ul li:hover a{
+  color: blueviolet;
+  }
+  .home{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 9% 0;
+  color: aliceblue;
+  }
+  .myinfo h1{
+  font-size: 55px;
+  margin: 10px;
+  }
+  .myinfo h1 span{
+  color: blueviolet;
+  }
+  .myinfo h2{
+  font-size: 32px;
+  margin-top: 10px;
+  }
+  .myinfo p{
+  font-size: 16px;
+  margin: 10px 0 25px;
+  }
+  .btn-sci{
+  display: flex;
+  align-items: center;
+  }
+  .btn{
+  display: inline-block;
+  background: blueviolet;
+  border: 2px solid blueviolet;
+  border-radius: 40px;
+  padding: 10px 30px;
+  box-shadow: 0px 0px 15px blue;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .5s;
+  }
+  .btn:hover{
+  background: transparent;
+  color: yellowgreen;
+  box-shadow: 0 0 130px darkgreen;
+  }
+  .btn-sci .sci{
+  margin-left: 25px;
+  }
+  .btn-sci .sci a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 700;
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid;
+  border-radius: 50%;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: .5s;
+  }
+  .btn-sci .sci a:hover{
+  background: blueviolet;
+  color: white;
+  box-shadow: 0 0 1000px green;
+  }
+  .image .image-box{
+  margin-left: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32vw;
+  height: 32vw;
+  animation: border 5s infinite;
+  transform: translate(360deg);
+  background: brown;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 0 150px darkgoldenrod;
+  }
+  
+  @keyframes border{
+  0%{
+  box-shadow: 0 0 40px green;
+  background: black;
+  }
+  50%{
+  box-shadow: 0 0 100px blueviolet;
+  background: blue;
+  }
+  100%{
+  box-shadow: 0 0 150px indianred;
+  background: brown;
+  }
+  }
+  
+  .image .image-box .image-photo{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: yellowgreen;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  }
+  .image .image-box .image-photo img{
+  position: absolute;
+  display: block;
+  width: 98%;
+  object-fit: cover;
+  border-radius: 50%;
+  }
