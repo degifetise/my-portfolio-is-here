@@ -48,7 +48,7 @@
   .navbar ul li:hover a{
   color: blueviolet;
   }
-h2 .dev{
+ h2 span.dev{
   font-size: 25px;
   color: blueviolet;
    }
