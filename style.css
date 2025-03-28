@@ -48,6 +48,10 @@
   .navbar ul li:hover a{
   color: blueviolet;
   }
+h2 .dev{
+  font-size: 25px;
+  color: blueviolet;
+   }
   .home{
   display: flex;
   align-items: center;
